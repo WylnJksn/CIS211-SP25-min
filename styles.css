@@ -80,11 +80,34 @@ header {
 header a {
     color: white;
     text-decoration: none;
+
 }
 
 header nav a {
-    text-transform: uppercase;
-    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 13px;
+    position: relative;
+    transition: transform 0.3s;
+    
+}
+
+header nav a:hover {
+    background-color: #333;
+}
+
+.signup {
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.signup:hover {
+    background-color: gray;
 }
 
 header nav ul {
@@ -97,6 +120,7 @@ header nav ul {
 section.hero {
     margin-top: 4rem;
     padding-top: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
     background-color: #222;
     background-image: 
@@ -171,14 +195,77 @@ section.hero {
 }
 
 
+  
+.plans {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+  }
+  
+.plan-box {
+    background: white;
+    border-radius: 10px;
+    width: 15rem;
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+    }
+  
+  .plan-box h2 {
+    color: black;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+  }
+  
+  .plan-box .price {
+    font-size: 22px;
+    color: black;
+    margin: 10px 0 20px 0;
+  }
+  
+  .plan-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .plan-box ul li {
+    color: black;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .plan-box button {
+    background: #a78bfa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .plan-box button:hover {
+    background: #7c3aed;
+  }
+  
+  .plan-box:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+
+
 footer {
     margin-top: 3rem;
 }
 
+
+
 footer a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: .75rem;
     padding: 1rem 2rem;
     border-radius: 8px;
 }
@@ -191,9 +278,18 @@ footer .important-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: .25rem;
     text-transform: uppercase;
     font-weight: 800;
+}
+
+footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .25rem;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 footer .copyright {
